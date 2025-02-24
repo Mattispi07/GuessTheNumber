@@ -2,7 +2,8 @@
 var numeroCasuale = Math.floor(Math.random() * 100) + 1;
 var input = document.getElementById("guessField");
 var result = document.getElementById("result");
-
+var tentativi = document.getElementById("tentativi");
+var i = 0;
 // prendi il numero in input dall'index.html
 function checkGuess() {
     var guess = parseInt(input.value);
@@ -15,9 +16,11 @@ function checkGuess() {
     } else if (guess < numeroCasuale) {
         result.innerHTML = "Il numero è troppo piccolo!";
         result.style.color = "lightBlue";
+        tentativi.innerHTML = "Tentativi: " + i++;
     } else if (guess > numeroCasuale) {
         result.innerHTML = "Il numero è troppo grande!";
         result.style.color = "lightBlue";
+        tentativi.innerHTML = "Tentativi: " + i++;
     } else {
         result.innerHTML = "Hai indovinato!";
         result.style.color = "lightGreen";

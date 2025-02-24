@@ -45,7 +45,7 @@ h1 {
     font-size: 20px;
     margin: 10px;
 }
-.footer-box {
+#footer-box {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -55,15 +55,7 @@ h1 {
     padding: 10px 0;
     border-top: 0px solid #cccccc5f;
 }
-.footer-box a {
+#footer-box a {
     text-decoration: none;
     color: inherit;
-}
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.best-record {
-    margin-left: auto;
 }
