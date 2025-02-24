@@ -45,17 +45,41 @@ h1 {
     font-size: 20px;
     margin: 10px;
 }
-#footer-box {
+.footer-box {
+    text-align: center;
+    padding: 10px;
+    background-color: #fcfcfcaf;
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.211);
-    text-align: center;
-    padding: 10px 0;
-    border-top: 0px solid #cccccc5f;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
-#footer-box a {
-    text-decoration: none;
-    color: inherit;
+
+.footer-box p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-box a {
+    color: #120d0d;
+    text-decoration: none;  
+}
+
+.footer-box a:hover {
+    text-decoration: underline;
+}
+#tentativi{
+    color:chocolate;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px;
+}
+#best-record{
+    font-weight: bold;
+    text-decoration: underline;
+    color: yellow;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px;
 }
