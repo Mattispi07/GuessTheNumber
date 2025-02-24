@@ -3,7 +3,8 @@ var numeroCasuale = Math.floor(Math.random() * 100) + 1;
 var input = document.getElementById("guessField");
 var result = document.getElementById("result");
 var tentativi = document.getElementById("tentativi");
-var i = 0;
+var i = 1; // Inizializza a 1
+
 // prendi il numero in input dall'index.html
 function checkGuess() {
     var guess = parseInt(input.value);
@@ -33,4 +34,5 @@ function resetGame() {
     result.innerHTML = "";
     input.disabled = false;
     numeroCasuale = Math.floor(Math.random() * 100) + 1;
+    i = 1; // Resetta il conteggio dei tentativi
 }
